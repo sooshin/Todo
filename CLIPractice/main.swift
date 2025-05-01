@@ -163,14 +163,11 @@ final class TodoManager {
 final class App {
     var jsonFileMangerCache: JSONFileManagerCache
     var todoManager: TodoManager
-//    var inMemoryCach: InMemoryCache
    
     
     init() {
         self.jsonFileMangerCache = JSONFileManagerCache()
         self.todoManager = TodoManager(cache: jsonFileMangerCache)
-//        self.inMemoryCach = InMemoryCache(inMemoryTodos: [])
-//        self.todoManager = TodoManager(cache: inMemoryCach)
     }
     
     enum Command: String {
